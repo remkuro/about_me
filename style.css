@@ -1,0 +1,122 @@
+/* CSS files add styling rules to your content */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+p {
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+
+/* img { height: 300px; } */
+
+
+/* sidenav links */
+.sidenav {
+  height: 100%;
+  width: 400;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #202020;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  /* justify-content:center;
+  align-items:center;
+  text-align:center; */
+  flex:1;
+   /* position:absolute; */
+}
+
+.sidenav a{
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding: 32px 62px 32px 62px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  background-color: #5e8581;
+}
+
+.info{
+  position:relative;
+  left:100px;
+  flex-direction: row;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background-color:#191919; 
+  color:#ffffff;
+}
+
+
+.info h1{
+  color:#ffffff;
+  font-size: 40px;
+}
+.info h4{
+  color:#ffffff;
+  font-size: 20px;
+  margin-left: 80px;
+}
+.button{
+  color: black;
+  cursor: pointer;
+}
+.button:hover{
+  transition-duration: 0.5s;
+  background-color:#b0c8e8;
+}
+
+.banner-img{
+  position: relative;
+
+  height: 300px;
+  width: 90%;
+  object-fit: cover;
+}
+.description {
+  display:flex;
+  flex-wrap:wrap;
+  flex: 1;
+  justify-content:center;
+  text-align: center;
+  margin-top: 20px;
+  background-color: #252525;
+  padding: 20px;
+}
+.gallery {
+  display: flex;
+  margin-left: 270px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px; /* gap between items */
+}
+/* not needed because of gap function
+.gallery-item {
+  padding: 5px;
+} */
+
+.gallery-item img {
+  display: block;
+  max-width: 300px; 
+  max-height: auto;
+  border-radius: 8px; 
+}
